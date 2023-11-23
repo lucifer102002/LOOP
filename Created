@@ -1,0 +1,15 @@
+5)LOOP
+
+  DECLARE
+  E NUMBER(6);
+  BEGIN
+  E:=11;
+  LOOP
+  DBMS_OUTPUT.PUT_LINE(E);
+  E:=E+11;
+  IF E>110 THEN
+  EXIT;
+  END IF;
+  END LOOP; 
+  END;
+  /
